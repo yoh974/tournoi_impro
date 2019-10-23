@@ -1,0 +1,91 @@
+easy_admin:
+  design:
+    menu:
+
+      - {entity: 'Tournoi', label: 'Tounoi'}
+      - {entity: 'Match', label: 'Match'}
+      - {entity: 'Equipe', icon: 'users', label: 'Equipe'}
+      - {entity: 'Personne', icon: 'user-alt', label: 'Personne'}
+      - {entity: 'ImageMatch', icon: 'camera', label: 'Photos des match'}
+
+    form_theme:
+      - '@EasyAdmin/form/bootstrap_4.html.twig'
+      - '@VichUploader/Form/fields.html.twig'
+  entities:
+    # List the entity class name you want to manage
+    Tournoi:
+      class: App\Entity\Tournoi
+      form:
+        fields:
+          - {property: saison}
+          - {property: date_debut_tournoi}
+          - {property: date_fin_tournoi }
+
+      list:
+        fields:
+          - {property: saison, label: 'Saison'}
+          - {property: nbre_match, label: 'Nombre de match'}
+          - {property: date_debut_tournoi, label: 'Date de début de tournoi'}
+          - {property: date_fin_tournoi,label: 'Date de fin de tournoi'}
+    Match:
+      class: App\Entity\Games
+      list:
+        fields:
+          - {property: 'id_tournoi' ,label: 'Tournoi'}
+          - {property: date_match,label: 'Date du match'}
+          - {property: nb_spectateur,label: 'Nombre de spéctateurs' }
+          - {property: id_equipe_1 ,label: 'Équipe 1' }
+          - {property: id_equipe_2 ,label: 'Équipe 2'}
+          - {property: nb_point_equipe_1,label: 'Nombre de points équipe 1' }
+          - {property: nb_point_equipe_2 ,label: 'Nombre de points équipe 2' }
+      form:
+        fields:
+          - {property: 'id_tournoi' ,label: 'Tournoi'}
+          - {property: date_match,label: 'Date du match'}
+          - {property: nb_spectateur,label: 'Nombre de spéctateurs' }
+          - {property: id_equipe_1 ,label: 'Équipe 1' }
+          - {property: id_equipe_2 ,label: 'Équipe 2'}
+          - {property: nb_point_equipe_1,label: 'Nombre de points équipe 1' }
+          - {property: nb_point_equipe_2 ,label: 'Nombre de points équipe 2' }
+
+    Equipe:
+      class: App\Entity\Equipe
+      form:
+        fields:
+          - {property: nom_equipe}
+          - { property: 'imageFile', type: 'file',label: 'Logo équipe' }
+
+      list:
+        fields:
+          - {property: nom_equipe,label: 'Nom de l&rsquo;équipe'}
+          - { property: 'image', type: 'image',label: 'Logo équipe',base_path: '%app.path.equipe_images%'  }
+
+    Personne:
+      class: App\Entity\Personne
+      form:
+        fields:
+          - {property: id_equipe, label: 'Equipe'}
+          - {property: nom}
+          - {property: prenom }
+          - {property: nom_de_scene }
+          - {property: 'imageFile', type: 'file',label: 'Photo' }
+      list:
+        fields:
+          - {property: nom, label: 'Nom'}
+          - {property: prenom, label: 'Prénom'}
+          - {property: nom_de_scene, label: 'Nom de scène'}
+          - {property: id_equipe, label: 'Equipe'}
+          - { property: 'image', type: 'image',label: 'Photo',base_path: '%app.path.personne_images%'  }
+    ImageMatch:
+      class: App\Entity\ImageMatch
+      form:
+        fields:
+          - {property: id_game, label: 'Match'}
+          - {property: 'imageFile', type: 'file',label: 'Photos', multiple: true }
+
+      list:
+        fields:
+          - {property: id_game, label: 'Match'}
+          - {property: 'image', type: 'image',label: 'Photo',base_path: '%app.path.match_images%'}
+
+

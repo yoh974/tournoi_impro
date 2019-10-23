@@ -1,0 +1,13 @@
+# config/packages/vich_uploader.yaml
+vich_uploader:
+  db_driver: orm
+  mappings:
+    equipe_images:
+      uri_prefix:         '%app.path.equipe_images%'
+      upload_destination: '%kernel.project_dir%/public%app.path.equipe_images%'
+    personne_images:
+      uri_prefix:         '%app.path.personne_images%'
+      upload_destination: '%kernel.project_dir%/public%app.path.personne_images%'
+    match_images:
+      uri_prefix:         '%app.path.match_images%'
+      upload_destination: '%kernel.project_dir%/public%app.path.match_images%'
