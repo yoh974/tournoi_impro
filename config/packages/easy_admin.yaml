@@ -2,11 +2,12 @@ easy_admin:
   design:
     menu:
 
-      - {entity: 'Tournoi', label: 'Tounoi'}
-      - {entity: 'Match', label: 'Match'}
+      - {entity: 'Tournoi', label: 'Tounoi', icon: 'chess-rook'}
+      - {entity: 'Match', label: 'Match', icon: 'angle-double-right'}
       - {entity: 'Equipe', icon: 'users', label: 'Equipe'}
       - {entity: 'Personne', icon: 'user-alt', label: 'Personne'}
       - {entity: 'ImageMatch', icon: 'camera', label: 'Photos des match'}
+      - {entity: 'Statistique', icon: 'bezier-curve', label: 'Statistique'}
 
     form_theme:
       - '@EasyAdmin/form/bootstrap_4.html.twig'
@@ -17,7 +18,6 @@ easy_admin:
       class: App\Entity\Tournoi
       form:
         fields:
-          - {property: saison}
           - {property: date_debut_tournoi}
           - {property: date_fin_tournoi }
 
@@ -76,6 +76,10 @@ easy_admin:
           - {property: nom_de_scene, label: 'Nom de scène'}
           - {property: id_equipe, label: 'Equipe'}
           - { property: 'image', type: 'image',label: 'Photo',base_path: '%app.path.personne_images%'  }
+
+    Statistique:
+      class: App\Entity\Statistique
+
     ImageMatch:
       class: App\Entity\ImageMatch
       form:

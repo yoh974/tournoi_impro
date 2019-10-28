@@ -63,6 +63,11 @@ class Personne
      */
     private $stats;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $email;
+
     public function __construct()
     {
         $this->stats = new ArrayCollection();
@@ -148,6 +153,10 @@ class Personne
     {
         return $this->image;
     }
+    public function __toString()
+    {
+        return $this->getNom();
+    }
 
     /**
      * @return Collection|Statistique[]
@@ -176,6 +185,18 @@ class Personne
                 $stat->setIdPersonne(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
 
         return $this;
     }

@@ -3,7 +3,10 @@
 {% block title 'Accueil' %}
 {% block body %}
     <div class="container mt-4">
-        <h2>Home</h2>
+        <h2>Tournoi Impro Toulouse</h2>
+        {% for personne in personnes %}
+            <li>{{ personne.nom }}</li>
+        {% endfor %}
 
     </div>
 
