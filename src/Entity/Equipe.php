@@ -139,7 +139,7 @@ class Equipe
 
     public function getImage()
     {
-        return $this->image;
+        return "uploads/images/equipes/".$this->image;
     }
 
     /**

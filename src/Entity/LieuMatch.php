@@ -148,4 +148,9 @@ class LieuMatch
 
         return $this;
     }
+    function __toString()
+    {
+        return $this->nom;
+
+    }
 }

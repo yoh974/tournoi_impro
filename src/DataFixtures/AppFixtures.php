@@ -28,7 +28,7 @@ class AppFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        
+
         $this->loadUsers();
         $this->loadPersonne();
         $this->loadEquipe();
@@ -37,7 +37,7 @@ class AppFixtures extends Fixture
         $this->loadGames();
         $this->loadStatistique();
         $this->loadImageMatch();
-        
+
     }
 
     private function loadPersonne()
@@ -45,7 +45,7 @@ class AppFixtures extends Fixture
         print_r("Start load Personne\r\n");
 
 
-        $number = 50;
+        $number = 30;
         $batchSize = 20;
         for ($i = 0; $i < $number; $i++) {
             $name = $this->faker->name;
@@ -59,7 +59,6 @@ class AppFixtures extends Fixture
                 ->setPrenom($prenom)
                 ->setEmail($email)
                 ->setNomDeScene($nom_scene);
-
 
 
             $this->manager->persist($personne);
@@ -78,7 +77,6 @@ class AppFixtures extends Fixture
     {
         $user = new User();
         $user
-
             ->setUsername('ADMIN')
             ->setEmail('admin@impro.com')
             ->setPlainPassword('admin')
@@ -91,7 +89,7 @@ class AppFixtures extends Fixture
 
     private function loadImageMatch()
     {
-        
+
     }
 
     private function loadEquipe()
@@ -102,17 +100,17 @@ class AppFixtures extends Fixture
         $number = 6;
         $batchSize = 20;
         $tab_personne = $this->manager->getRepository(Personne::class)->findAll();
-        $tab_image = array('logo_marseille.png','logo_paris.png');
+        $tab_image = array('logo_marseille.png', 'logo_paris.png');
         for ($i = 0; $i < $number; $i++) {
             $name = $this->faker->word;
             $equipe = new Equipe();
             $equipe
                 ->setNomEquipe($name)
-                ->addPersonne($tab_personne[array_rand($tab_personne)])
-                ->setImage($tab_image[array_rand($tab_image)])
-
-                ;
-
+                ->setImage($tab_image[array_rand($tab_image)]);
+            for ($j = 0; $j < 5; $j++) {
+                $equipe
+                    ->addPersonne($tab_personne[array_rand($tab_personne)]);
+            }
             $this->manager->persist($equipe);
 
             if ((($i + 1) % $batchSize) === 0) {
@@ -137,7 +135,8 @@ class AppFixtures extends Fixture
         $this->manager->flush();
         print_r("Done load Tournoi\r\n");
     }
-    private  function loadLieuxmatch()
+
+    private function loadLieuxmatch()
     {
         $lieux = new LieuMatch();
         $lieux
@@ -145,11 +144,11 @@ class AppFixtures extends Fixture
             ->setAdresse('15 du du feu')
             ->setComplementAdresse('')
             ->setCodePostal('35147')
-            ->setVille('Montpellier')
-            ;
+            ->setVille('Montpellier');
         $this->manager->persist($lieux);
         $this->manager->flush();
     }
+
     private function loadGames()
     {
         $number = 5;
@@ -163,9 +162,8 @@ class AppFixtures extends Fixture
                 ->setIdEquipe1($equipes[array_rand($equipes)])
                 ->setIdEquipe2($equipes[array_rand($equipes)])
                 ->setIdTournoi($tournoi[array_rand($tournoi)])
-                ->setDateMatch($this->faker->dateTimeBetween('now','5 months'))
-                ->setLieuxMatch($lieu_match[array_rand($lieu_match)])
-            ;
+                ->setDateMatch($this->faker->dateTimeBetween('now', '5 months'))
+                ->setLieuxMatch($lieu_match[array_rand($lieu_match)]);
 
             $this->manager->persist($game);
 

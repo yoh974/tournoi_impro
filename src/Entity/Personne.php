@@ -142,7 +142,7 @@ class Personne
 
     public function getImage()
     {
-        return $this->image;
+        return "/upload/personnes/".$this->image;
     }
     public function __toString()
     {
