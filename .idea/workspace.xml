@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e067897-fafe-471e-bfd8-80169bdf917d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/LieuMatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/LieuMatchRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Equipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Equipe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Games.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Games.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/LieuMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/LieuMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Personne.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
@@ -46,6 +49,20 @@
         <item name="tournoi_impro_toulouse@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="tournoi_impro_toulouse: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tournoi_impro_toulouse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tournoi_impro_toulouse: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="equipe: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tournoi_impro_toulouse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tournoi_impro_toulouse: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="games: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -214,17 +231,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app_plugimmo/plugimmo_frontend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\tournoi_impro_toulouse\config\packages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\tournoi_impro_toulouse\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\tournoi_impro_toulouse\config\packages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,7 +290,11 @@
       <workItem from="1572274796825" duration="5603000" />
       <workItem from="1572341548864" duration="28000" />
       <workItem from="1572341639150" duration="1246000" />
-      <workItem from="1572683696044" duration="822000" />
+      <workItem from="1572683696044" duration="2385000" />
+      <workItem from="1572718271940" duration="8000" />
+      <workItem from="1572871184387" duration="619000" />
+      <workItem from="1572946114101" duration="5407000" />
+      <workItem from="1573307453876" duration="2476000" />
     </task>
     <servers />
   </component>

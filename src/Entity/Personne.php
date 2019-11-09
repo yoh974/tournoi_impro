@@ -38,10 +38,6 @@ class Personne
     private $nom_de_scene;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Equipe")
-     */
-    private $id_equipe;
-    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @var string
      */
@@ -67,6 +63,11 @@ class Personne
      * @ORM\Column(type="string", length=255)
      */
     private $email;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Equipe", inversedBy="personnes")
+     */
+    private $equipe;
 
     public function __construct()
     {
@@ -115,17 +116,7 @@ class Personne
         return $this;
     }
 
-    public function getIdEquipe(): ?Equipe
-    {
-        return $this->id_equipe;
-    }
 
-    public function setIdEquipe(?Equipe $id_equipe): self
-    {
-        $this->id_equipe = $id_equipe;
-
-        return $this;
-    }
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
@@ -197,6 +188,18 @@ class Personne
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getEquipe(): ?Equipe
+    {
+        return $this->equipe;
+    }
+
+    public function setEquipe(?Equipe $equipe): self
+    {
+        $this->equipe = $equipe;
 
         return $this;
     }

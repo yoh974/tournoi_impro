@@ -49,11 +49,15 @@ class Equipe
      */
     private $updatedAt;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Personne", mappedBy="equipe")
+     */
+    private $personnes;
+
 
     public function __construct()
     {
-        $this->nom_de_scene = new ArrayCollection();
-        $this->getGames = new ArrayCollection();
+        $this->personnes = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -136,6 +140,37 @@ class Equipe
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * @return Collection|Personne[]
+     */
+    public function getPersonnes(): Collection
+    {
+        return $this->personnes;
+    }
+
+    public function addPersonne(Personne $personne): self
+    {
+        if (!$this->personnes->contains($personne)) {
+            $this->personnes[] = $personne;
+            $personne->setEquipe($this);
+        }
+
+        return $this;
+    }
+
+    public function removePersonne(Personne $personne): self
+    {
+        if ($this->personnes->contains($personne)) {
+            $this->personnes->removeElement($personne);
+            // set the owning side to null (unless already changed)
+            if ($personne->getEquipe() === $this) {
+                $personne->setEquipe(null);
+            }
+        }
+
+        return $this;
     }
 
 

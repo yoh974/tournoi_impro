@@ -61,6 +61,12 @@ class Games
      */
     private $stats;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\LieuMatch", inversedBy="games")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $lieux_match;
+
     public function __construct()
     {
         $this->stats = new ArrayCollection();
@@ -183,6 +189,18 @@ class Games
                 $stat->setIdMatch(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLieuxMatch(): ?LieuMatch
+    {
+        return $this->lieux_match;
+    }
+
+    public function setLieuxMatch(?LieuMatch $lieux_match): self
+    {
+        $this->lieux_match = $lieux_match;
 
         return $this;
     }
