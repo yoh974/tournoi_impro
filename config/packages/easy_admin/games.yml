@@ -1,0 +1,22 @@
+easy_admin:
+  entities:
+    Match:
+      class: App\Entity\Games
+      list:
+        fields:
+          - {property: 'id_tournoi' ,label: 'Tournoi'}
+          - {property: date_match,label: 'Date du match'}
+          - {property: nb_spectateur,label: 'Nombre de spéctateurs' }
+          - {property: id_equipe_1 ,label: 'Équipe 1' }
+          - {property: id_equipe_2 ,label: 'Équipe 2'}
+          - {property: nb_point_equipe_1,label: 'Nombre de points équipe 1' }
+          - {property: nb_point_equipe_2 ,label: 'Nombre de points équipe 2' }
+      form:
+        fields:
+          - {property: 'id_tournoi' ,label: 'Tournoi'}
+          - {property: date_match,label: 'Date du match'}
+          - {property: nb_spectateur,label: 'Nombre de spéctateurs' }
+          - {property: id_equipe_1 ,label: 'Équipe 1' }
+          - {property: id_equipe_2 ,label: 'Équipe 2'}
+          - {property: nb_point_equipe_1,label: 'Nombre de points équipe 1' }
+          - {property: nb_point_equipe_2 ,label: 'Nombre de points équipe 2' }

@@ -1,0 +1,13 @@
+easy_admin:
+  entities:
+    Equipe:
+      class: App\Entity\Equipe
+      form:
+        fields:
+          - {property: nom_equipe}
+          - { property: 'imageFile', type: 'file',label: 'Logo équipe' }
+
+      list:
+        fields:
+          - {property: nom_equipe,label: 'Nom de l&rsquo;équipe'}
+          - { property: 'image', type: 'image',label: 'Logo équipe',base_path: '%app.path.equipe_images%'  }

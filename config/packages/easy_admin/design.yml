@@ -1,0 +1,14 @@
+easy_admin:
+  design:
+    menu:
+
+      - {entity: 'Tournoi', label: 'Tounoi', icon: 'chess-rook'}
+      - {entity: 'Match', label: 'Match', icon: 'angle-double-right'}
+      - {entity: 'Equipe', icon: 'users', label: 'Equipe'}
+      - {entity: 'Personne', icon: 'user-alt', label: 'Personne'}
+      - {entity: 'ImageMatch', icon: 'camera', label: 'Photos des match'}
+      - {entity: 'Statistique', icon: 'bezier-curve', label: 'Statistique'}
+
+    form_theme:
+      - '@EasyAdmin/form/bootstrap_4.html.twig'
+      - '@VichUploader/Form/fields.html.twig'

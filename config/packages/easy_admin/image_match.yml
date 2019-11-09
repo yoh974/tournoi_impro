@@ -1,0 +1,13 @@
+easy_admin:
+  entities:
+    ImageMatch:
+      class: App\Entity\ImageMatch
+      form:
+        fields:
+          - {property: id_game, label: 'Match'}
+          - {property: 'imageFile', type: 'file',label: 'Photos', multiple: true }
+
+      list:
+        fields:
+          - {property: id_game, label: 'Match'}
+          - {property: 'image', type: 'image',label: 'Photo',base_path: '%app.path.match_images%'}

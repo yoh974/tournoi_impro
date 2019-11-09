@@ -47,6 +47,7 @@ class AppFixtures extends Fixture
 
         $number = 30;
         $batchSize = 20;
+        $imagetab = array("user-1.png","user-2.jpg","user-3.png","user-4.jpg");
         for ($i = 0; $i < $number; $i++) {
             $name = $this->faker->name;
             $prenom = $this->faker->firstName;
@@ -58,7 +59,9 @@ class AppFixtures extends Fixture
                 ->setNom($name)
                 ->setPrenom($prenom)
                 ->setEmail($email)
-                ->setNomDeScene($nom_scene);
+                ->setNomDeScene($nom_scene)
+                ->setImage($imagetab[array_rand($imagetab)])
+            ;
 
 
             $this->manager->persist($personne);

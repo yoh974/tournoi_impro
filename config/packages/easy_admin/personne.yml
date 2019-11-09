@@ -1,0 +1,18 @@
+easy_admin:
+  entities:
+    Personne:
+      class: App\Entity\Personne
+      form:
+        fields:
+          - {property: equipe, label: 'Equipe'}
+          - {property: nom}
+          - {property: prenom }
+          - {property: nom_de_scene }
+          - {property: 'imageFile', type: 'file',label: 'Photo' }
+      list:
+        fields:
+          - {property: nom, label: 'Nom'}
+          - {property: prenom, label: 'Prénom'}
+          - {property: nom_de_scene, label: 'Nom de scène'}
+          - {property: equipe, label: 'Equipe'}
+          - { property: 'image', type: 'image',label: 'Photo',base_path: '%app.path.personne_images%'  }

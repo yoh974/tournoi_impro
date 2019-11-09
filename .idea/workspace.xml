@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e067897-fafe-471e-bfd8-80169bdf917d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/equipe_detail.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/equipes.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/basic.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/design.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/equipe.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/games.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/image_match.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/lieu_match.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/personne.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/statistique.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/tournoi.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/user.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191109151032.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/personnes/Simple-Office-Computer-View-PowerPoint-Template-cofe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Equipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Equipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/LieuMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/LieuMatch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Personne.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/equipe_detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/equipe_detail.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/equipes.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/equipes.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +67,21 @@
         <item name="tournoi_impro_toulouse@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="tournoi_impro_toulouse: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="equipe: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tournoi_impro_toulouse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tournoi_impro_toulouse: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="migration_versions: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tournoi_impro_toulouse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tournoi_impro_toulouse: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="personne: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -277,7 +299,7 @@
       <workItem from="1572718271940" duration="8000" />
       <workItem from="1572871184387" duration="619000" />
       <workItem from="1572946114101" duration="5407000" />
-      <workItem from="1573307453876" duration="10298000" />
+      <workItem from="1573307453876" duration="13646000" />
     </task>
     <servers />
   </component>

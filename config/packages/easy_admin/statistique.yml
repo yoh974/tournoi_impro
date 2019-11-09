@@ -1,0 +1,14 @@
+easy_admin:
+  entities:
+    Statistique:
+      class: App\Entity\Statistique
+      form:
+        fields:
+          - {property: name, label: 'Nom'}
+          - {property: value, label: 'Valeur'}
+          - {property: id_personne, label: 'Personne' }
+        list:
+          fields:
+            - {property: name, label: 'Nom'}
+            - {property: value, label: 'Valeur'}
+            - {property: id_personne, label: 'Personne' }
