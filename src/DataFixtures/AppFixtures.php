@@ -4,6 +4,8 @@ namespace App\DataFixtures;
 
 
 use App\Entity\Equipe;
+use App\Entity\Games;
+use App\Entity\LieuMatch;
 use App\Entity\Personne;
 use App\Entity\Tournoi;
 use App\Entity\User;
@@ -31,6 +33,7 @@ class AppFixtures extends Fixture
         $this->loadPersonne();
         $this->loadEquipe();
         $this->loadTournoi();
+        $this->loadLieuxmatch();
         $this->loadGames();
         $this->loadStatistique();
         $this->loadImageMatch();
@@ -96,18 +99,19 @@ class AppFixtures extends Fixture
         print_r("Start load Equipe\r\n");
 
 
-        $number = 10;
+        $number = 6;
         $batchSize = 20;
+        $tab_personne = $this->manager->getRepository(Personne::class)->findAll();
+        $tab_image = array('logo_marseille.png','logo_paris.png');
         for ($i = 0; $i < $number; $i++) {
             $name = $this->faker->word;
-
-
             $equipe = new Equipe();
             $equipe
                 ->setNomEquipe($name)
+                ->addPersonne($tab_personne[array_rand($tab_personne)])
+                ->setImage($tab_image[array_rand($tab_image)])
+
                 ;
-
-
 
             $this->manager->persist($equipe);
 
@@ -133,10 +137,40 @@ class AppFixtures extends Fixture
         $this->manager->flush();
         print_r("Done load Tournoi\r\n");
     }
-
+    private  function loadLieuxmatch()
+    {
+        $lieux = new LieuMatch();
+        $lieux
+            ->setNom('maison pour tous')
+            ->setAdresse('15 du du feu')
+            ->setComplementAdresse('')
+            ->setCodePostal('35147')
+            ->setVille('Montpellier')
+            ;
+        $this->manager->persist($lieux);
+        $this->manager->flush();
+    }
     private function loadGames()
     {
+        $number = 5;
+        $lieu_match = $this->manager->getRepository(LieuMatch::class)->findAll();
+        $tournoi = $this->manager->getRepository(Tournoi::class)->findAll();
+        $equipes = $this->manager->getRepository(Equipe::class)->findAll();
+        for ($i = 0; $i < $number; $i++) {
+            $name = $this->faker->word;
+            $game = new Games();
+            $game
+                ->setIdEquipe1($equipes[array_rand($equipes)])
+                ->setIdEquipe2($equipes[array_rand($equipes)])
+                ->setIdTournoi($tournoi[array_rand($tournoi)])
+                ->setDateMatch($this->faker->dateTimeBetween('now','5 months'))
+                ->setLieuxMatch($lieu_match[array_rand($lieu_match)])
+            ;
 
+            $this->manager->persist($game);
+
+        }
+        $this->manager->flush();
     }
 
     private function loadStatistique()

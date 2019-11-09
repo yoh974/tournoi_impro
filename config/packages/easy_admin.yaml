@@ -1,6 +1,5 @@
-easy_admin:
-  imports:
-    - { resource: easy_admin/ }
+imports:
+  - { resource: easy_admin/ }
 
 
 
