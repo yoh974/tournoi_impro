@@ -80,7 +80,8 @@ class Tournoi
      */
     public function getNbreMatch(): ?int
     {
-        return $this->nbre_match;
+        $games = $this->getNbGames;
+        return count($games);
     }
 
     /**

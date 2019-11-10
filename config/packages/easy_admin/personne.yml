@@ -2,6 +2,7 @@ easy_admin:
   entities:
     Personne:
       class: App\Entity\Personne
+      label: 'Joueur'
       form:
         fields:
           - {property: equipe, label: 'Equipe'}

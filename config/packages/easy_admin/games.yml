@@ -17,7 +17,7 @@ easy_admin:
       form:
         fields:
           - {property: 'id_tournoi' ,label: 'Tournoi'}
-          - {property: date_match,label: 'Date du match'}
+          - {property: date_match,label: 'Date du match', , type_options: {widget: 'single_text'} }
           - {property: nb_spectateur,label: 'Nombre de spéctateurs' }
           - {property: id_equipe_1 ,label: 'Équipe 1' }
           - {property: id_equipe_2 ,label: 'Équipe 2'}

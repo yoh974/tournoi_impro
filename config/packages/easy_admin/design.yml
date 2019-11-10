@@ -2,7 +2,7 @@ easy_admin:
   design:
     menu:
 
-      - {entity: 'Tournoi', label: 'Tounoi', icon: 'chess-rook'}
+      - {entity: 'Tournoi', label: 'Tournoi', icon: 'chess-rook'}
       - {entity: 'Match', label: 'Match', icon: 'angle-double-right'}
       - {entity: 'Equipe', icon: 'users', label: 'Equipe'}
       - {entity: 'Personne', icon: 'user-alt', label: 'Joueur'}

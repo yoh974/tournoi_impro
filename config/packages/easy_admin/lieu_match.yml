@@ -1,6 +1,7 @@
 easy_admin:
   entities:
     Lieu_match:
+      label: 'Lieu de match'
       class: App\Entity\LieuMatch
       list:
         fields:

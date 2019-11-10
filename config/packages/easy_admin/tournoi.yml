@@ -2,17 +2,17 @@ easy_admin:
   entities:
     # List the entity class name you want to manage
     Tournoi:
+      label: 'Tournoi'
       class: App\Entity\Tournoi
       form:
         fields:
-          - {property: date_debut_tournoi}
-          - {property: date_fin_tournoi }
-
+          - {property: date_debut_tournoi , type_options: {widget: 'single_text'}  }
+          - {property: date_fin_tournoi , type_options: {widget: 'single_text'}  }
       list:
         fields:
           - {property: saison, label: 'Saison'}
           - {property: nbre_match, label: 'Nombre de match'}
-          - {property: date_debut_tournoi, label: 'Date de début de tournoi'}
+          - {property: date_debut_tournoi, label: 'Date de début de tournoi' }
           - {property: date_fin_tournoi,label: 'Date de fin de tournoi'}
         actions:
           # displays both the action label and a custom icon

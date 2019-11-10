@@ -1,2 +1,6 @@
 easy_admin:
   site_name: 'Impro champion ligue'
+  edit:
+    title: 'Editer %%entity_label%%'
+  new:
+    title: 'Ajouter %%entity_label%%'
