@@ -19,7 +19,9 @@
                                 <div class="row d-flex justify-content-center align-items-center">
                                     {% for joueur in equipe.getPersonnes() %}
                                         <div class="col-md-3 mb-4">
-                                            <img src="{{ vich_uploader_asset(joueur,'imageFile') }}" style="width: 100%;">
+                                            <a href="{{ path('fiche_joueur',{'id':joueur.getId()}) }}">
+                                                <img src="{{ vich_uploader_asset(joueur,'imageFile') }}" style="width: 100%;">
+                                            </a>
                                         </div>
                                     {% endfor %}
                                 </div>

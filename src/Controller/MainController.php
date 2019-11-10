@@ -50,7 +50,7 @@ class MainController extends AbstractController
     public function fiche_joueur(PersonneRepository $personneRepository, $id)
     {
         $joueur = $personneRepository->find($id);
-        return $this->render("fiche_joueur.html.twig",compact($joueur));
+        return $this->render("fiche_joueur.html.twig",compact("joueur"));
     }
 
 }

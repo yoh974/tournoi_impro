@@ -1,19 +1,24 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
-            <h1>{{joueur.nom}}</h1>
-            <div class="image_fiche_joueur">
-                <img src="{{ vich_uploader_asset(joueur, 'imageFile') }}" alt="" style="width: 100%;height: auto;">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                <h1>{{ joueur.getNom() }}</h1>
+                <div class="image_fiche_joueur mt-5">
+                    <img src="{{ vich_uploader_asset(joueur, 'imageFile') }}" alt="" style="width: 100%;height: auto;">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <p>{{ joueur.getBio() }}</p>
             </div>
         </div>
-        <div class="col-md-8">
-
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Statistiques</h2>
+            </div>
         </div>
     </div>
-</div>
 {% endblock %}
 
 {% block title %}
