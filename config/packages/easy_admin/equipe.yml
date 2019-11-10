@@ -4,10 +4,14 @@ easy_admin:
       class: App\Entity\Equipe
       form:
         fields:
-          - {property: nom_equipe}
+          - {property: nom_equipe,label: "Nom de l'équipe"}
+          - {property: description, label: "Description"}
           - { property: 'imageFile', type: 'file',label: 'Logo équipe' }
 
       list:
         fields:
           - {property: nom_equipe,label: 'Nom de l&rsquo;équipe'}
           - { property: 'image', type: 'image',label: 'Logo équipe',base_path: '%app.path.equipe_images%'  }
+        actions:
+          # displays both the action label and a custom icon
+          - { name: 'new', icon: 'plus', label: 'Ajouter une équipe' }

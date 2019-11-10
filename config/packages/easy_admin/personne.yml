@@ -8,7 +8,9 @@ easy_admin:
           - {property: nom}
           - {property: prenom }
           - {property: nom_de_scene }
+          - {property: bio, label: 'Bio'}
           - {property: 'imageFile', type: 'file',label: 'Photo' }
+
       list:
         fields:
           - {property: nom, label: 'Nom'}

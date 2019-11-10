@@ -2,18 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e067897-fafe-471e-bfd8-80169bdf917d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191109212030.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191110063559.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191110065555.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/edit_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/list_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/new_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/show_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Profile/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Profile/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/check_email.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/email.txt.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Resetting/email.txt.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Resetting/request.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Resetting/reset.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/design.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/design.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/equipe.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/equipe.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/games.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/games.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/image_match.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/image_match.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/lieu_match.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/lieu_match.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/personne.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/personne.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/statistique.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/statistique.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/tournoi.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/tournoi.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin/user.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin/user.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Games.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Games.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,13 +241,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app_plugimmo/plugimmo_frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Resources/FOSUserBundle/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\tournoi_impro_toulouse\src\Resources\FOSUserBundle\views" />
       <recent name="C:\wamp\www\tournoi_impro_toulouse\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -246,17 +271,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c019c62d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c019c62d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@289b7f54" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -290,7 +305,7 @@
       <workItem from="1572718271940" duration="8000" />
       <workItem from="1572871184387" duration="619000" />
       <workItem from="1572946114101" duration="5407000" />
-      <workItem from="1573307453876" duration="19193000" />
+      <workItem from="1573307453876" duration="25959000" />
     </task>
     <servers />
   </component>

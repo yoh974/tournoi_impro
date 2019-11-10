@@ -11,3 +11,6 @@ easy_admin:
         fields:
           - {property: id_game, label: 'Match'}
           - {property: 'image', type: 'image',label: 'Photo',base_path: '%app.path.match_images%'}
+        actions:
+          # displays both the action label and a custom icon
+          - { name: 'new', icon: 'plus', label: 'Ajouter des photos de match' }

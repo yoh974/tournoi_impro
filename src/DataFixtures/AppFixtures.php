@@ -84,7 +84,9 @@ class AppFixtures extends Fixture
             ->setEmail('admin@impro.com')
             ->setPlainPassword('admin')
             ->setRoles(['ROLE_ADMIN'])
-            ->setEnabled(true);
+            ->setEnable(1)
+            ->setEnabled(1)
+        ;
 
         $this->manager->persist($user);
         $this->manager->flush();

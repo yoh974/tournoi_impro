@@ -7,11 +7,11 @@ easy_admin:
           - {property: name, label: 'Nom'}
           - {property: value, label: 'Valeur'}
           - {property: id_personne, label: 'Personne' }
-        list:
-          fields:
-            - {property: name, label: 'Nom'}
-            - {property: value, label: 'Valeur'}
-            - {property: id_personne, label: 'Personne' }
+      list:
+        fields:
+          - {property: name, label: 'Nom'}
+          - {property: value, label: 'Valeur'}
+          - {property: id_personne, label: 'Personne' }
         actions:
           # displays both the action label and a custom icon
           - { name: 'new', icon: 'plus', label: 'Ajouter une statistique'}

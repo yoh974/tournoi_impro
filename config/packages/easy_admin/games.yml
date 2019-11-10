@@ -11,6 +11,9 @@ easy_admin:
           - {property: id_equipe_2 ,label: 'Équipe 2'}
           - {property: nb_point_equipe_1,label: 'Nombre de points équipe 1' }
           - {property: nb_point_equipe_2 ,label: 'Nombre de points équipe 2' }
+        actions:
+          # displays both the action label and a custom icon
+          - { name: 'new', icon: 'plus', label: 'Ajouter un match' }
       form:
         fields:
           - {property: 'id_tournoi' ,label: 'Tournoi'}

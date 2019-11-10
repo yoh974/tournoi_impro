@@ -9,6 +9,9 @@ easy_admin:
           - {property: 'complement_adresse', label: 'Adresse 2'}
           - {property: 'code_postal', label: 'Code Postal'}
           - {property: 'ville', label: 'Ville'}
+        actions:
+          # displays both the action label and a custom icon
+          - { name: 'new', icon: 'plus', label: 'Ajouter un lieux de match' }
       form:
         fields:
           - {property: 'nom' ,label: 'Libellé'}
