@@ -1,0 +1,19 @@
+easy_admin:
+  entities:
+    Lieu_match:
+      class: App\Entity\LieuMatch
+      list:
+        fields:
+          - {property: 'nom' ,label: 'Libellé'}
+          - {property: 'adresse', label: 'Adresse 1'}
+          - {property: 'complement_adresse', label: 'Adresse 2'}
+          - {property: 'code_postal', label: 'Code Postal'}
+          - {property: 'ville', label: 'Ville'}
+      form:
+        fields:
+          - {property: 'nom' ,label: 'Libellé'}
+          - {property: 'adresse', label: 'Adresse 1'}
+          - {property: 'complement_adresse', label: 'Adresse 2'}
+          - {property: 'code_postal', label: 'Code Postal'}
+          - {property: 'ville', label: 'Ville'}
+

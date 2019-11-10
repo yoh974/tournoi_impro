@@ -28,9 +28,28 @@ class User extends BaseUser
      */
     protected $roles;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $enable;
+
+
+
     public function __construct()
     {
         parent::__construct();
         // your own logic
+    }
+
+    public function getEnable(): ?bool
+    {
+        return $this->enable;
+    }
+
+    public function setEnable(bool $enable): self
+    {
+        $this->enable = $enable;
+
+        return $this;
     }
 }

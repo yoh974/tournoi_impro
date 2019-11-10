@@ -1,0 +1,21 @@
+easy_admin:
+  entities:
+    User:
+      class: App\Entity\User
+      list:
+        fields:
+          - {property: 'username' ,label: "Nom d'utilisateur"}
+          - {property: 'email', label: 'Email'}
+          - {property: 'enable', label: 'Activé'}
+          - {property: 'roles', label: 'Role'}
+        actions:
+          # displays both the action label and a custom icon
+          - { name: 'new', icon: 'plus', label: 'Ajouter un utilisateur' }
+      form:
+        fields:
+          - {property: 'username' ,label: "Nom d'utilisateur"}
+          - {property: 'email', label: 'Email'}
+          - {property: 'enable', label: 'Activé'}
+          - {property: 'password', label: 'Mot de passe'}
+          - {property: 'roles', label: 'Role'}
+

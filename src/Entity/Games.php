@@ -204,4 +204,8 @@ class Games
 
         return $this;
     }
+    public function __toString()
+    {
+        return $this->id_equipe_1." vs ".$this->id_equipe_2;
+    }
 }

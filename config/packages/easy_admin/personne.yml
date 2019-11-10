@@ -16,3 +16,6 @@ easy_admin:
           - {property: nom_de_scene, label: 'Nom de scène'}
           - {property: equipe, label: 'Equipe'}
           - { property: 'image', type: 'image',label: 'Photo',base_path: '%app.path.personne_images%'  }
+        actions:
+          # displays both the action label and a custom icon
+          - { name: 'new', icon: 'plus', label: 'Ajouter un joueur'}

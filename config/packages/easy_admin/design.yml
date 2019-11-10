@@ -5,9 +5,11 @@ easy_admin:
       - {entity: 'Tournoi', label: 'Tounoi', icon: 'chess-rook'}
       - {entity: 'Match', label: 'Match', icon: 'angle-double-right'}
       - {entity: 'Equipe', icon: 'users', label: 'Equipe'}
-      - {entity: 'Personne', icon: 'user-alt', label: 'Personne'}
+      - {entity: 'Personne', icon: 'user-alt', label: 'Joueur'}
       - {entity: 'ImageMatch', icon: 'camera', label: 'Photos des match'}
       - {entity: 'Statistique', icon: 'bezier-curve', label: 'Statistique'}
+      - {entity: 'Lieu_match', icon: 'map-marker', label: 'Lieux des matches'}
+      - {entity: 'User', icon: 'user', label: 'Utilisateur'}
 
     form_theme:
       - '@EasyAdmin/form/bootstrap_4.html.twig'

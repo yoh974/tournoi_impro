@@ -14,3 +14,6 @@ easy_admin:
           - {property: nbre_match, label: 'Nombre de match'}
           - {property: date_debut_tournoi, label: 'Date de début de tournoi'}
           - {property: date_fin_tournoi,label: 'Date de fin de tournoi'}
+        actions:
+          # displays both the action label and a custom icon
+          - { name: 'new', icon: 'plus', label: 'Ajouter un tournoi'}
