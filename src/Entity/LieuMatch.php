@@ -150,7 +150,7 @@ class LieuMatch
     }
     function __toString()
     {
-        return $this->nom;
+        return "$this->nom/$this->adresse/$this->complement_adresse/$this->code_postal/$this->ville";
 
     }
 }

@@ -69,6 +69,11 @@ class Personne
      */
     private $equipe;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $bio;
+
     public function __construct()
     {
         $this->stats = new ArrayCollection();
@@ -200,6 +205,18 @@ class Personne
     public function setEquipe(?Equipe $equipe): self
     {
         $this->equipe = $equipe;
+
+        return $this;
+    }
+
+    public function getBio(): ?string
+    {
+        return $this->bio;
+    }
+
+    public function setBio(?string $bio): self
+    {
+        $this->bio = $bio;
 
         return $this;
     }

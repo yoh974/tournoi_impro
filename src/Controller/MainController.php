@@ -28,7 +28,7 @@ class MainController extends AbstractController
         );
     }
     /**
-     * @Route("/equipes.html.twig",name="equipe_show")
+     * @Route("/equipes",name="equipe_show")
      */
     public function equipes(EquipeRepository $equipeRepository)
     {
@@ -37,12 +37,20 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/equipe/{id}",name="equipe_detail")
+     * @Route("/equipe/{id}",name="fiche_equipe")
      */
-    public function  equipe_detail(EquipeRepository $equipeRepository,$id)
+    public function  fiche_equipe(EquipeRepository $equipeRepository, $id)
     {
         $equipe = $equipeRepository->find($id);
         return $this->render("equipe_detail.html.twig",compact("equipe"));
+    }
+    /**
+     * @Route("/joueur/{id}",name="fiche_joueur")
+     */
+    public function fiche_joueur(PersonneRepository $personneRepository, $id)
+    {
+        $joueur = $personneRepository->find($id);
+        return $this->render("fiche_joueur.html.twig",compact($joueur));
     }
 
 }

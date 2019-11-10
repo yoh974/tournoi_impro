@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e067897-fafe-471e-bfd8-80169bdf917d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/basic.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/design.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/equipe.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/games.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/image_match.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/lieu_match.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/personne.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/statistique.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/tournoi.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin/user.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191109151032.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fiche_joueur.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Equipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Equipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Personne.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/LieuMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/LieuMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/equipe_detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/equipe_detail.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/equipes.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/equipes.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -299,7 +287,7 @@
       <workItem from="1572718271940" duration="8000" />
       <workItem from="1572871184387" duration="619000" />
       <workItem from="1572946114101" duration="5407000" />
-      <workItem from="1573307453876" duration="13646000" />
+      <workItem from="1573307453876" duration="15989000" />
     </task>
     <servers />
   </component>
